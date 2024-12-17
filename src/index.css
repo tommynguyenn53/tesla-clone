@@ -1,0 +1,37 @@
+/* 
+ * Apply box-sizing and other default styles to all elements
+ * Ensures consistent padding and margin behavior across all elements.
+ */
+* {
+    box-sizing: border-box; /* Ensures padding and borders are included in the element's total width/height */
+    font-family: "Rubik", sans-serif; /* Sets default font family to "Rubik" or sans-serif as fallback */
+    color: #393c41; /* Sets default text color to a dark gray */
+    margin: 0; /* Removes default margin for all elements */
+    padding: 0; /* Removes default padding for all elements */
+}
+
+/* 
+ * Style for the body element to ensure full width and hide horizontal overflow.
+ */
+body {
+    width: 100%; /* Makes the body take up the full width of the viewport */
+    overflow-x: hidden; /* Prevents horizontal scrolling */
+}
+
+/* 
+ * Keyframes animation for the down arrow (e.g., "DownArrow" element).
+ * Creates a bouncing effect to animate the down arrow.
+ */
+@keyframes animateDown {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0); /* Initial position at the top of the cycle */
+    }
+
+    40% {
+        transform: translateY(5px); /* Moves the element 5px downward at 40% of the animation duration */
+    }
+
+    60% {
+        transform: translateY(3px); /* Moves the element 3px downward at 60% of the animation duration */
+    }
+}
