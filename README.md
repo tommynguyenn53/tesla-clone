@@ -48,3 +48,10 @@ Once the application is running, you can view the Tesla models and solar panel s
 - Implement a fully-featured order system.
 - Integrate with a backend for fetching live data (e.g., car prices, availability).
 
+## Live Demo
+
+To view the live version of this project, simply click on the link below:
+
+[View the Tesla Clone](https://tesla-clone-nu-nine.vercel.app/)
+
+
