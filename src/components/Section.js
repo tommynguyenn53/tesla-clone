@@ -1,6 +1,7 @@
 // Importing necessary modules
 import React from 'react';
 import styled from 'styled-components';
+import Fade from 'react-reveal/Fade';
 
 // Functional component 'Section' that takes in props to render a section of a page
 function Section({title, description, leftBtnText, rightBtnText, backgroundImg}) {
@@ -8,25 +9,30 @@ function Section({title, description, leftBtnText, rightBtnText, backgroundImg})
         // 'Wrap' is the main container that takes in a background image as a prop
         <Wrap bgImage={backgroundImg}>
             {/* 'ItemText' is a div for the title and description */}
-            <ItemText>
-                <h1>{title}</h1>
-                <p>{description}</p>
-            </ItemText>
-
+            <Fade bottom>
+                <ItemText>
+                    <h1>{title}</h1>
+                    <p>{description}</p>
+                </ItemText>
+            </Fade>
             {/* 'Buttons' contains the left and right buttons */}
             <Buttons>
-                <ButtonGroup>
+                <Fade bottom>
+                    <ButtonGroup>
                     {/* Left button with text passed as a prop */}
                     <LeftButton>
                         {leftBtnText}
                     </LeftButton>
-
-                    {/* Right button with text passed as a prop */}
+                    { rightBtnText &&
                     <RightButton>
                         {rightBtnText}
                     </RightButton>
-                </ButtonGroup>
-                
+
+                    }
+                    {/* Right button with text passed as a prop */}
+
+                    </ButtonGroup>
+                </Fade>
                 {/* Down arrow image with an animation applied */}
                 <DownArrow src="images/down-arrow.svg" />
             </Buttons>
@@ -54,6 +60,7 @@ const Wrap = styled.div`
 
 // 'ItemText' contains the title and description with some padding and centered text
 const ItemText = styled.div`
+    z-index: 10;
     padding-top: 15vh; // Offset the text down the page by 15% of the viewport height
     text-align: center; // Center align the text
 `

@@ -47,6 +47,13 @@ function Home() {
                 leftBtnText="Order now" // Left button text for solar panels
                 rightBtnText="Learn More" // Right button text for solar panels
             />
+
+            <Section
+                title="Acessories" // Title for Accessories section
+                description="" // Description for the section
+                backgroundImg="accessories.jpg" // Background image for Accessories
+                leftBtnText="Shop now" // Left button text for Accessories
+            />
         </Container>
     );
 }
@@ -56,4 +63,5 @@ export default Home; // Exports the Home component for use elsewhere
 // Container styled-component, which defines the full height of the section
 const Container = styled.div`
     height: 100vh; // Full height of the viewport
+    z-index: 10;
 `;

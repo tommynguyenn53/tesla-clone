@@ -18,6 +18,10 @@ body {
     overflow-x: hidden; /* Prevents horizontal scrolling */
 }
 
+a {
+    text-decoration: none;
+}
+
 /* 
  * Keyframes animation for the down arrow (e.g., "DownArrow" element).
  * Creates a bouncing effect to animate the down arrow.
