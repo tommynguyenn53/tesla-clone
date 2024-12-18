@@ -52,6 +52,6 @@ Once the application is running, you can view the Tesla models and solar panel s
 
 To view the live version of this project, simply click on the link below:
 
-[View the Tesla Clone](https://tesla-clone-nu-nine.vercel.app/)
+[View the Tesla Clone](https://tesla-clone-nu-nine.vercel.app/){:target="_blank"}
 
 
