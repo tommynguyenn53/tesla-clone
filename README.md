@@ -2,6 +2,12 @@
 
 A clone of Tesla's website showcasing various car models and solar panels, built with React and styled-components.
 
+## Live Demo
+
+To view the live version of this project, simply click on the link below:
+
+[View the Tesla Clone](https://tesla-clone-nu-nine.vercel.app/)
+
 ## Description
 
 This project replicates the layout and functionality of Tesla's official website. It displays information about different Tesla car models (Model S, Model Y, Model 3, Model X) as well as Tesla's solar panel offering. The app allows users to interact with various sections, learn more about the products, and place an order.
@@ -47,12 +53,4 @@ Once the application is running, you can view the Tesla models and solar panel s
 - Add React Router for better navigation between different sections.
 - Implement a fully-featured order system.
 - Integrate with a backend for fetching live data (e.g., car prices, availability).
-
-## Live Demo
-
-To view the live version of this project, simply click on the link below:
-
-[View the Tesla Clone](https://tesla-clone-nu-nine.vercel.app/)
-
-
 
